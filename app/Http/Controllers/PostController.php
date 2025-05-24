@@ -67,7 +67,7 @@ class PostController extends Controller
 
         $request->session()->flash('message', '更新しました');
 
-        return redirect()->route('post.show', compact('post'));
+        return redirect()->route('posts.show', compact('post'));
     }
 
     public function destroy(Request $request, Post $post)
